@@ -6,7 +6,7 @@ class Solution {
         int[][] efforts = new int[n][m];
         for(int i=0; i<n; i++)
             Arrays.fill(efforts[i], Integer.MAX_VALUE);
-        PriorityQueue<Pair> queue = new PriorityQueue<>((a, b) -> a.effort - b.effort);
+        Queue<Pair> queue = new LinkedList<>(/*(a, b) -> a.effort - b.effort*/);
         queue.offer(new Pair(0, 0, 0));
         
         int[] dRow = {-1, 0, 1, 0};
